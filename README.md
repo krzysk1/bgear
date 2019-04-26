@@ -1,5 +1,4 @@
 # bgear
-<<<<<<< HEAD
 The Extra 330 SC is a Lycoming AEIO-580-powered single-seat aircraft with improved roll rate and easier roll stops, designed specifically for Unlimited category competition. It is actually the only single-seater aerobatic aircraft built by Extra. (From Wikipedia, the free encyclopedia)
 
 This is free add-on for Aerofly FS2 developed by Krzysztof Kaniewski,
@@ -19,13 +18,9 @@ Installation
 
 1. Unzip file and move the folder "bgear" to C:\Users\~\Documents\Aerofly FS2\aircraft.
 
-2. Copy all *.tsb files from "extra300" folder from your aeroflyFS installation path into "bgear" folder.
+2. Copy all *.tsb files from "extra300" folder from your Aerofly FS2 installation path into "bgear" folder.
 
-Tips:
-
-AirBrake button - turn off/on engine
-
-There are other liveries in 'liveries' folder:
+There are other liveries in folders:
 
 - blender
 - bw
