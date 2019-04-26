@@ -1,4 +1,5 @@
 # bgear
+<<<<<<< HEAD
 The Extra 330 SC is a Lycoming AEIO-580-powered single-seat aircraft with improved roll rate and easier roll stops, designed specifically for Unlimited category competition. It is actually the only single-seater aerobatic aircraft built by Extra.
 
 Made by Krzysztof Kaniewski. 
@@ -19,3 +20,5 @@ How to change to expert mode:
             <[float64][StallRange][0.2]>		=>	            <[float64][StallRange][0.1]>
         <[aerowing][StabilizerAero]>
             <[float64][PropwashRotation][0.0]>	=>	            <[float64][PropwashRotation][0.01]>
+=======
+>>>>>>> parent of 0dfe043... Update README.md
