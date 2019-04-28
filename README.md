@@ -14,7 +14,7 @@ Creative Commons License
 This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
 so basically you can do anything with it.
 
-Installation
+# Installation
 
 1. Unzip file and move the folder "bgear" to C:\Users\~\Documents\Aerofly FS2\aircraft.
 
