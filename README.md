@@ -4,9 +4,6 @@ The Extra 330 SC is a Lycoming AEIO-580-powered single-seat aircraft with improv
 This is free add-on for Aerofly FS2 developed by Krzysztof Kaniewski,
 Original 3D model created by Martins Upitis; http://devlog-martinsh.blogspot.com/]>. Thanks to him. 
 Flight dynamic model based on default Aerofly FS 330LX.
-
- Some features may not work as intended and this aircraft could crash your Aerofly FS2. 
- Use it at your own risk!
  
 Martins Upitis write: The BGE Air Race project is dead, but from the positive side I have some nice stuff to share with you. So I give you this nice low-poly aerobatics aircraft to play with. The model is based on Extra 300L  and I used Zivko Edge 540 cockpit as the reference for the interior.
 
@@ -20,6 +17,9 @@ so basically you can do anything with it.
 
 2. Copy all *.tsb files from "extra300" folder from your Aerofly FS2 installation path into "bgear" folder.
 
+ Some features may not work as intended and this aircraft could crash your Aerofly FS2. 
+ Use it at your own risk!
+ 
 There are other liveries in folders:
 
 - blender
