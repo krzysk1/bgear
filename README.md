@@ -29,6 +29,7 @@ There are other liveries in folders:
 - white
 
 
+Aircraft Technical Data & Specifications http://www.airliners.net/aircraft-data/extra-230-300-200/209
 
 How to change to expert mode:
 
