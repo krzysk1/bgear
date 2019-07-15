@@ -999,9 +999,9 @@
                 <[string8][AirfoilRoot][AirfoilVerticalStabilizer]>
                 <[string8][AirfoilTip][AirfoilVerticalStabilizer]>
                 <[float64array][StationY][ 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ]>
-                <[float64array][StationLE][ -3.604 -3.602 -3.603 -3.708 -3.87 0 -3.87 0 -3.947 ]>
+                <[float64array][StationLE][ -3.604 -3.602 -3.603 -3.708 -3.87 -3.87 -3.947 ]>
                 <[float64array][StationTE][ -4.461 -4.776 -4.787 -4.663 -4.507 -4.502 -4.453 ]>
-                <[float64array][StationZ][ -0.143 -0.075 -0.023 0.482 1.1 00 1.106 1.302 ]>
+                <[float64array][StationZ][ -0.143 -0.075 -0.023 0.482 1.1 1.106 1.302 ]>
                 <[float64array][StationIncidence][ 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ]>
                 <[uint32array][StationFlap][ 1 1 1 1 1 1 0 ]>
                 <[float64array][StationFlapFraction][ 0.3 0.4 0.5 0.5 0.5 1.0 1.0 ]>
@@ -1086,7 +1086,7 @@
                 <[float64][StationX][ 0.91094 0.80184 0.67068 0.48777 0.01628 ]>
                 <[float64][StationY][ -0.9265 -0.9265 -0.9265 -0.9265 -0.9265 ]>
                 <[float64][StationZ][ -1.18742 -1.19090 -1.18435 -1.18949 -1.1892 ]>
-                <[float64][StationWidth][ 0.05672 0.15531 0.18047 0.17344 0.04484 ]>
+                <[float64][StationWidth][ 0.08672 0.21531 0.28047 0.25344 0.04484 ]>
                 <[float64][StationHeight][ 0.06711 0.22013 0.2736 0.26845 0.07729 ]>
                 <[uint32][StationShape][ 0 0 0 0 0 ]>
                 <[float64][Cdx][0.6]>
@@ -1106,7 +1106,7 @@
                 <[float64][StationX][ 0.91094 0.80184 0.67068 0.48777 0.01628 ]>
                 <[float64][StationY][ 0.9265 0.9265 0.9265 0.9265 0.9265 ]>
                 <[float64][StationZ][ -1.18742 -1.19090 -1.18435 -1.18949 -1.1892 ]>
-                <[float64][StationWidth][ 0.05672 0.15531 0.18047 0.17344 0.04484 ]>
+                <[float64][StationWidth][ 0.08672 0.21531 0.28047 0.25344 0.04484 ]>
                 <[float64][StationHeight][ 0.06711 0.22013 0.2736 0.26845 0.07729 ]>
                 <[uint32][StationShape][ 0 0 0 0 0 ]>
                 <[float64][Cdx][0.6]>
