@@ -105,8 +105,7 @@
                 <[vector3_float64][R0][-0.9439 0.0 0.2536]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
-                <[float64][StepAngle][0.3]>
-                <[string8][InputTransform][CanopyTransform.Output]>				
+                <[float64][StepAngle][0.3]>			
                 <[control_message][OnRotate][]
                     <[string8][Message][GPS.Zoom]>
                     <[string8][Qualifiers][step]>
