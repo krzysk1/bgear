@@ -1214,6 +1214,14 @@
             <[output][NavigationLightOn][]
                 <[string8][Input][NavigationLightSwitch.Output]>
             >
+            <[input_discrete][GPSZoom][]
+                <[string8][Input][GPS.Zoom]>
+                <[tmvector2d][Range][ -2.0 8.0 ]>
+                <[float64][Value][2.0]>
+            >
+            <[output_free][GPSZoomOutput][]
+                <[string8][Input][GPSZoom.Output]>
+            >			
             <[event_sound][SwitchSound][]
             >
         >
@@ -3391,14 +3399,26 @@
             >
             <[texture_animation][DisplayTexture][]
                 <[string8][TextureName][gps_color]>
-                <[string8][RenderList][DisplayMap.Render]>
+                <[string8][RenderList][ DisplayMap.Render DisplayMapAircraft.Render ]>
+            >
+            <[graphics_input][GPSZoom][]
+                <[uint32][InputID][GPSZoom.Output]>
             >
             <[texture_animation_map_display][DisplayMap][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[tmvector2d][TargetPosition][ 0 0 ]>
-                <[tmvector2d][TargetSize][ 256 256 ]>
-                <[tmvector2d][TargetScale][ 256 256 ]>
+                <[tmvector2d][TargetSize][ 512 512 ]>
+                <[tmvector2d][TargetScale][ 512 512 ]>
+                <[string8][InputZoom][GPSZoom.Output]>
+            >
+            <[texture_animation_rectangle][DisplayMapAircraft][]
+                <[tmvector2d][TargetPosition][ 251 256 ]>
+                <[tmvector2d][TargetSize][ 10 10 ]>
+                <[tmvector2d][TargetScale][ 512 512 ]>
+                <[tmvector2d][SourcePosition][ 0 64 ]>
+                <[tmvector2d][SourceSize][ 64 64 ]>
+                <[tmvector2d][SourceScale][ 512 512 ]>
             >
             <[rigidbodygraphics][LeftWing][]
                 <[string8][GeometryList][ leftwing leftsight ]>
