@@ -1296,7 +1296,7 @@
             >
 
             <[graphics_human][Pilot][]
-                <[string8][GeometryList][ PilotBody PilotHead ]>
+                <[string8][GeometryList][ PilotBody PilotHead  ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][ShowInside][4]>
