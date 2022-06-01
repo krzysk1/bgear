@@ -1,4 +1,6 @@
 # bgear
+Extra 330 SC (BGE Air Race) for Aerofly FS2
+
 The Extra 330 SC is a Lycoming AEIO-580-powered single-seat aircraft with improved roll rate and easier roll stops, designed specifically for Unlimited category competition. It is actually the only single-seater aerobatic aircraft built by Extra. (From Wikipedia, the free encyclopedia)
 
 This is free add-on for Aerofly FS2 developed by Krzysztof Kaniewski,
