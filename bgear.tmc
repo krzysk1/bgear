@@ -1,32 +1,8 @@
-﻿<[file][][]
-    <[object][][]
-        <[int][Version][210]>
-        <[vec32array][ContactSpheres][ (0.627 0.926 -1.256 0.184) (0.627 -0.926 -1.256 0.184) (-4.654 0.0 -0.466 0.082) ]>
-        <[string8][DisplayName][Extra 330 SC]> // https://www.extraaircraft.com/330SC.php
-        <[string8][DescriptionTextEN][The EXTRA 330 SC is a single seat, low-wing aerobatic monoplane with conventional(taildragger) landing gear, offering incredible aerobatic performance for the unlimited competitor or free-style pilot.
-For Aerofly FS2 made by Krzysztof Kaniewski. Original 3D model created by Martins Upitis.]> // http://devlog-martinsh.blogspot.com/
-		<[float64][WingSpan][7.5]>
-		<[float64][Mass][780.0]>
-		<[float64][MinimumSpeed][32.0]>
-        <[float64][ApproachSpeed][36.3]>
-        <[float64][CruiseSpeed]  [75.0]>
-		<[float64][MaximumSpeed][110.0]>
-		<[tmvector2d][NormalSpeedRange][ 30.5 79.0 ]>
-		<[tmvector2d][CautionSpeedRange][ 79.0 110.0 ]>
-		<[tmvector2d][FlapSpeedRange][ 0.0 0.0 ]>
-        <[float64][MaximumAltitude][4875.0]>
-        <[float64][CruiseAltitude] [3000.0]>
-        <[float64][QSpan][7.5]>
-        <[float64][QMass][870.0]>
-        <[float64][QSpeed][110.0]>
-        <[float64][QPower][234675.0]>
-        <[float64][QThrust][0]>
-        <[float64][QRange][850000.0]>
-        <[float64][QRatio][0.0]>
-        <[float64][QBuild][0]>
-        <[float64][QVirgin][2008]>
-		<[bool][Airplane][true]>
-		<[bool][Aerobatic][true]>
-		<[string8][Pilot][pilot_andy]>
+<[file][][]    <[object][][]
+        <[int][Version][220]>        <[vec32array][ContactSpheres][ (0.627 0.926 -1.256 0.184) (0.627 -0.926 -1.256 0.184) (-4.654 0.0 -0.466 0.082) ]>
+        <[string8][ICAO][E300]>        <[string8][DisplayName][Extra 330SC]>
+        <[string8][DisplayNameFull][Extra 330 SC]>
+        <[localized_text_list][Descriptions][]            <[localized_text][][]                <[string8][Language][en]>                <[string8][Text][The EXTRA 330 SC is a single seat, low-wing aerobatic monoplane with conventional(taildragger) landing gear, offering incredible aerobatic performance for the unlimited competitor or free-style pilot. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model created by Martins Upitis.]>            >        >		<[float64][WingSpan][7.5]>		<[float64][MinimumAirspeed][32.0]>	        <[float64][ApproachAirspeed][36.3]>        <[float64][CruiseAirspeed][75.0]>        <[float64][MaximumAirspeed][110.0]>	        <[float64][MaximumSpeed][110.0]>				<[tmvector2d][NormalAirspeedRange][ 30.5 79.0 ]>		<[tmvector2d][CautionAirspeedRange][ 79.0 110.0 ]>		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>        <[float64][MaximumAltitude][3048.0]>        <[float64][CruiseAltitude][1000.0]>        <[float64][CruiseSpeed][110.0]>		        <[float64][MaximumTakeoffMass][780.0]>        <[float64][EnginePower][234675.0]>        <[float64][MaximumRange][850000.0]>        <[uint][UnitsBuilt][200]>        <[uint][EngineCount][1]>        <[uint][Year][2008]>
+        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>		<[string8][Pilot][pilot_andy]>
     >
 >
