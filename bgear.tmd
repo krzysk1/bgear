@@ -400,7 +400,6 @@
                 <[float64][Inflation][344738.0]>
                 <[string8][Body][LeftGear]>
                 <[tmvector3d][R0][ 0.6269 0.9265 -1.256]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0]>
                 <[string8][InputBrake][LeftBrakeInput.Output]>
                 <[float64][BrakeStrength][1.0]>
             >
@@ -413,7 +412,6 @@
                 <[float64][Inflation][344738.0]>
                 <[string8][Body][RightGear]>
                 <[tmvector3d][R0][ 0.6269 -0.9265 -1.256]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0]>
                 <[string8][InputBrake][RightBrakeInput.Output]>
                 <[float64][BrakeStrength][1.0]>
             >
@@ -426,7 +424,6 @@
                 <[float64][Inflation][551580.8]>
                 <[string8][Body][TailWheelSupport]>
                 <[tmvector3d][R0][-4.654 0.0 -0.4663]>
-                <[tmvector3d][X0][1.0 0.0 0.0]>
                 <[float64][BrakeStrength][0.0]>
             >
             <[output][GroundRollSpeedTail][]
@@ -1096,6 +1093,10 @@
             <[sender][SenderMach][]
                 <[string8][Input][PitotTube.MachNumber]>
                 <[string8][Message][Aircraft.MachNumber]>
+            >
+            <[sender][SenderAngleOfAttack][]
+                <[string8][Input][PitotTube.AngleOfAttack]>
+                <[string8][Message][Aircraft.AngleOfAttack]>
             >
             <[input_default][PressureSettingPilot][]
                 <[string8][Message][PressureSetting]>
@@ -3364,8 +3365,8 @@
             <[texture_animation_map_display][DisplayMap][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[tmvector2d][TargetPosition][ 0 0 ]>
-                <[tmvector2d][TargetSize][ 512 512 ]>
+                <[tmvector2d][TargetPosition][ 0.0 0.0 ]>
+                <[tmvector2d][TargetSize][ 1.0 1.0 ]>
                 <[tmvector2d][TargetScale][ 512 512 ]>
                 <[string8][InputZoom][GPSZoom.Output]>
             >
