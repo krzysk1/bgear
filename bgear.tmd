@@ -5,17 +5,62 @@
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][LookAtPosition][ -0.2 0.0 0.0 ]>   // mass: 777.3 (-0.243 0.007 -0.057)
             >
-            <[camera][Follow][]
+            <[camera][CameraFollow][]
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -8.0 0.0 2.0 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
             >
-            <[camera_head][Pilot][]
+            <[camera_head][CameraPilot][]
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -1.51 0.0 0.54 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 -0.2 ]>
+                <[float64][Kf][60.0]>
+                <[float64][Df][1.00]>
+                <[float64][Kt][0.08]>
+                <[float64][Dt][0.02]>
                 <[bool][InCockpit][true]>
+                <[string8][Tags][cockpit pilot rear]>
             >
+            <[camera][CameraCockpitOutside][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][ -2.2 -2.0 2.4 ]>
+                <[tmvector3d][Direction][ 0.6 0.6 -0.6 ]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][cockpit outside]>
+            >
+            <[camera][CameraGearView][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][ -3.81 0.74 -0.11 ]>
+                <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][gear]>
+            >
+            <[camera][CameraStabilizer][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][ -3.82 0.0 1.48 ]>
+                <[tmvector3d][Direction][ 0.95 0.0 -0.3 ]>
+                <[float64][Cone][-0.1]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][tail stabilizer]>
+            >
+            <[camera][CameraLeftFuselageView][]
+                <[string8][Body][LeftWing]>
+                <[tmvector3d][R0][ -0.25 4.0 0.2 ]>
+                <[tmvector3d][X0][ 0.0 -1.0 0.0 ]>
+                <[tmvector3d][Direction][ 0.0 -1.0 -0.1 ]>
+                <[float64][Cone][0.0]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][fuselage wing left]>
+            >
+            <[camera][CameraRightFuselageView][]
+                <[string8][Body][RightWing]>
+                <[tmvector3d][R0][ -0.25 -4.0 0.2 ]>
+                <[tmvector3d][X0][ 0.0 1.0 0.0 ]>
+                <[tmvector3d][Direction][ 0.0 1.0 -0.1 ]>
+                <[float64][Cone][0.0]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][fuselage wing right]>
+            >			
             <[rigidbody][Fuselage][]
                 <[float64][Mass][580.0]>
                 <[tmvector3d][InertiaLength][3.7 0.6 0.6]>
@@ -708,6 +753,11 @@
                 <[string8][Input][ElevatorTrim.Output]>
                 <[string8][Message][Aircraft.Trim]>
             >
+            <[sender][SenderPitchTrimPosition][]
+                <[string8][Input][ElevatorTrim.Output]>
+                <[string8][Message][Aircraft.PitchTrim]>
+                <[string8][Qualifiers][ normalized ]>
+            >
             <[mixlinear][MixElevatorTrim][]
                 <[string8][Input0][ElevatorInput.Output]>
                 <[string8][Input1][ElevatorTrim.Output]>
@@ -983,7 +1033,7 @@
                 <[float64][D][40000.0]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionLeftGear][]
                 <[string8][Body][LeftGear]>
@@ -992,7 +1042,6 @@
                 <[float64][D][750.0]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
             >
             <[collisionhull][CollisionRightGear][]
                 <[string8][Body][RightGear]>
@@ -1001,7 +1050,6 @@
                 <[float64][D][750.0]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
             >
             <[collisionhull][CollisionLeftWing][]
                 <[string8][Body][LeftWing]>
@@ -1010,7 +1058,6 @@
                 <[float64][D][2000.0]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
             >
             <[collisionhull][CollisionRightWing][]
                 <[string8][Body][RightWing]>
@@ -1019,8 +1066,21 @@
                 <[float64][D][2000.0]>
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
-                <[bool][Blade][false]>
             >
+            <[collisionhull][CollisionRudder][]
+                <[string8][Body][Fuselage]>
+                <[string8][Geometry][Rudder]>
+                <[float64][K][500000.0]>
+                <[float64][D][2000.0]>
+                <[bool][InstantCrash][true]>
+            >
+            <[collisionhull][CollisionElevator][]
+                <[string8][Body][Fuselage]>
+                <[string8][Geometry][Elevator]>
+                <[float64][K][500000.0]>
+                <[float64][D][2000.0]>
+                <[bool][InstantCrash][true]>
+            >			
             <[aerofuselage][FuselageAero][]
                 <[tmvector3d][R0][0.0 0.0 0.0]>
                 <[tmvector3d][X0][1.0 0.0 0.0]>
@@ -1260,7 +1320,7 @@
                 <[string8][GeometryList][ PilotBody PilotHead ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][ShowInside][4]>
+                <[uint32][ShowInside][CameraCockpitOutside CameraStabilizer CameraLeftFuselageView CameraRightFuselageView]>
                 <[bone_array][Bones][]
                  <[bone][element][0]
                      <[string8][Name][Bip01]>
@@ -3756,7 +3816,7 @@
                 <[string8][InputPitch][FlightPitch.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][wind.wav]>
+                <[string8][SoundFile][sounds/wind.wav]>
                 <[bool][External][false]>
             >
             <[soundinput][RotationSpeed][]
@@ -3826,96 +3886,108 @@
                 <[string8][InputPitch][RPMPitch800.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_800_int.wav]>
+                <[string8][SoundFile][sounds/extra330lx_800_int.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM1200LoopIntern][]
                 <[string8][InputVolume][RPMVolume1200.Output]>
                 <[string8][InputPitch][RPMPitch1200.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_1200_int.wav]>
+                <[string8][SoundFile][sounds/extra330lx_1200_int.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM1500LoopIntern][]
                 <[string8][InputVolume][RPMVolume1500.Output]>
                 <[string8][InputPitch][RPMPitch1500.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_1500_int.wav]>
+                <[string8][SoundFile][sounds/extra330lx_1500_int.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM1800LoopIntern][]
                 <[string8][InputVolume][RPMVolume1800.Output]>
                 <[string8][InputPitch][RPMPitch1800.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_1800_int.wav]>
+                <[string8][SoundFile][sounds/extra330lx_1800_int.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM2200LoopIntern][]
                 <[string8][InputVolume][RPMVolume2200.Output]>
                 <[string8][InputPitch][RPMPitch2200.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_2200_int.wav]>
+                <[string8][SoundFile][sounds/extra330lx_2200_int.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM2600LoopIntern][]
                 <[string8][InputVolume][RPMVolume2600a.Output]>
                 <[string8][InputPitch][RPMPitch2600.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_2600_int.wav]>
+                <[string8][SoundFile][sounds/extra330lx_2600_int.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM800LoopExtern][]
                 <[string8][InputVolume][RPMVolume800.Output]>
                 <[string8][InputPitch][RPMPitch800.Output]>
                 <[uext32][PositionID][Fuselage.R]>
                 <[uext32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_800_ext.wav]>
+                <[string8][SoundFile][sounds/extra330lx_800_ext.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM1200LoopExtern][]
                 <[string8][InputVolume][RPMVolume1200.Output]>
                 <[string8][InputPitch][RPMPitch1200.Output]>
                 <[uext32][PositionID][Fuselage.R]>
                 <[uext32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_1200_ext.wav]>
+                <[string8][SoundFile][sounds/extra330lx_1200_ext.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM1500LoopExtern][]
                 <[string8][InputVolume][RPMVolume1500.Output]>
                 <[string8][InputPitch][RPMPitch1500.Output]>
                 <[uext32][PositionID][Fuselage.R]>
                 <[uext32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_1500_ext.wav]>
+                <[string8][SoundFile][sounds/extra330lx_1500_ext.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM1800LoopExtern][]
                 <[string8][InputVolume][RPMVolume1800.Output]>
                 <[string8][InputPitch][RPMPitch1800.Output]>
                 <[uext32][PositionID][Fuselage.R]>
                 <[uext32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_1800_ext.wav]>
+                <[string8][SoundFile][sounds/extra330lx_1800_ext.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM2200LoopExtern][]
                 <[string8][InputVolume][RPMVolume2200.Output]>
                 <[string8][InputPitch][RPMPitch2200.Output]>
                 <[uext32][PositionID][Fuselage.R]>
                 <[uext32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_2200_ext.wav]>
+                <[string8][SoundFile][sounds/extra330lx_2200_ext.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundloop][RPM2600LoopExtern][]
                 <[string8][InputVolume][RPMVolume2600a.Output]>
                 <[string8][InputPitch][RPMPitch2600.Output]>
                 <[uext32][PositionID][Fuselage.R]>
                 <[uext32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][extra330lx_2600_ext.wav]>
+                <[string8][SoundFile][sounds/extra330lx_2600_ext.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.9 -0.0 0.0]>				
             >
             <[soundinput][SideSlip][]
                 <[uint32][InputID][SideSlip.Output]>
@@ -3930,7 +4002,7 @@
                 <[string8][InputPitch][FlightPitch.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-                <[string8][SoundFile][sideslip.wav]>
+                <[string8][SoundFile][sounds/sideslip.wav]>
                 <[bool][External][false]>
             >
             <[soundinput][GroundRollLoadTail][]
@@ -4053,7 +4125,7 @@
                 <[string8][InputTrigger][SwitchSound.Output]>
                 <[string8][InputVolume][0.6]>
                 <[string8][InputPitch][1.5]>
-                <[string8][SoundFile][switch.wav]>
+                <[string8][SoundFile][sounds/switch.wav]>
                 <[bool][External][false]>
             >
         >

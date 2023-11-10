@@ -24,6 +24,7 @@
         <[float64][StarterMaximumTime][3.0]>
         <[float64][RotationSpeedNormalizedClimb] [0.9259]>
         <[float64][RotationSpeedNormalizedCruise][0.9259]>
+        <[float64][GainSideSlipRoll][0.15]>
         <[float64][StarterMaximumTime][3.0]>
         <[float64][RotationSpeedNormalizedClimb] [0.9259]>
         <[float64][RotationSpeedNormalizedCruise][0.9259]>		

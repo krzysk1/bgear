@@ -1,0 +1,3 @@
+Do not delete this folder
+
+Place here all *.tsb sound files from "extra300" aircraft located in your Aerofly FS4 installation path
