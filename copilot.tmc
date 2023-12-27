@@ -1,13 +1,13 @@
 <[file][][]
     <[hints][][]
-        // Extra 330 SC
-        <[float64][MaximumTakeOffMass][780.0]>
+        // Extra 300S (Acrobatic category)
+        <[float64][MaximumTakeOffMass][820.0]>
         <[float64][WingSpan][7.5]>
-        <[float64][WingArea][9.81]>
+        <[float64][WingArea][10.44]>
         <[float64][HeightOffset][-1.256]>
-        <[float64][ApproachSpeed][40.5]>
-        <[float64][PatternSpeed][46.9]>
-        <[float64][InitialClimbSpeed][43.0]>
+        <[float64][ApproachSpeed][37.5]> 
+        <[float64][PatternSpeed][45.0]>
+        <[float64][InitialClimbSpeed][42.5]>
         <[int][EngineCount][1]>
         <[bool][Piston][true]>
         <[bool][GeneralAviation][true]>

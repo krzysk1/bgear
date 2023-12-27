@@ -3,33 +3,33 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (0.627 0.926 -1.256 0.184) (0.627 -0.926 -1.256 0.184) (-4.654 0.0 -0.466 0.082) ]>
         <[string8][ICAO][E300]>
-        <[string8][DisplayName][Extra 330SC]>
-        <[string8][DisplayNameFull][Extra 330 SC]>
+        <[string8][DisplayName][Extra 300S]>
+        <[string8][DisplayNameFull][Extra 300S]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
                 <[string8][Language][en]>
-                <[string8][Text][The EXTRA 330 SC is a single seat, low-wing aerobatic monoplane with conventional(taildragger) landing gear, offering incredible aerobatic performance for the unlimited competitor or free-style pilot. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model created by Martins Upitis.]>
+                <[string8][Text][The EXTRA 300S is a single seat, low-wing aerobatic monoplane with conventional(taildragger) landing gear, offering incredible aerobatic performance for the unlimited competitor or free-style pilot. This nice low-poly aerobatics aircraft is based on Extra 300L and uses Zivko Edge 540 cockpit as the reference for the interior. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model created by Martins Upitis (BGE Air Race project).]>
             >
             <[localized_text][][]
                 <[string8][Language][de]>
-                <[string8][Text][Die Extra 330 sind ein- oder zweisitzige Versionen des Kunstflugzeugs Extra 300 in Tiefdeckeranordnung des deutschen Herstellers Extra Aircraft. Für Aerofly FS4 von Krzysztof Kaniewski. 3d-Modell erstellt von Martins Upitis.]>
+                <[string8][Text][Die Extra 300S sind ein- oder zweisitzige Versionen des Kunstflugzeugs Extra 300 in Tiefdeckeranordnung des deutschen Herstellers Extra Aircraft. Für Aerofly FS4 von Krzysztof Kaniewski. 3d-Modell erstellt von Martins Upitis.]>
 			>
         >
 		<[float64][WingSpan][7.5]>
-		<[float64][MinimumAirspeed][32.0]>
-        <[float64][ApproachAirspeed][36.3]>
+		<[float64][MinimumAirspeed][30.0]>
+        <[float64][ApproachAirspeed][37.5]>
         <[float64][CruiseAirspeed][75.0]>
         <[float64][MaximumAirspeed][110.0]>
         <[float64][MaximumSpeed][110.0]>
-		<[tmvector2d][NormalAirspeedRange][ 30.5 79.0 ]>
+		<[tmvector2d][NormalAirspeedRange][ 30.0 79.0 ]>
 		<[tmvector2d][CautionAirspeedRange][ 79.0 110.0 ]>
 		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
         <[float64][MaximumAltitude][3048.0]>
         <[float64][CruiseAltitude][1000.0]>
         <[float64][CruiseSpeed][110.0]>
-        <[float64][MaximumTakeoffMass][780.0]>
+        <[float64][MaximumTakeoffMass][820.0]>
         <[float64][EnginePower][234675.0]>
-        <[float64][MaximumRange][850000.0]>
+        <[float64][MaximumRange][768000.0]>
         <[uint][UnitsBuilt][200]>
         <[uint][EngineCount][1]>
         <[uint][Year][2008]>

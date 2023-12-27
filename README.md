@@ -1,7 +1,7 @@
 # bgear
-Extra 330 SC (BGE Air Race) for Aerofly FS4
+Extra 300S (BGE Air Race) for Aerofly FS4
 
-The Extra 330 SC is a Lycoming AEIO-580-powered single-seat aircraft with improved roll rate and easier roll stops, designed specifically for Unlimited category competition. It is actually the only single-seater aerobatic aircraft built by Extra. (From Wikipedia, the free encyclopedia)
+The Extra Flugzeugbau EA300 is a two-seat aerobatic monoplane capable of Unlimited category competition.
 
 This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski with the Aerofly FS4 SDK. 
 Original 3D model created by Martins Upitis; http://devlog-martinsh.blogspot.com/]>. Thanks to him. 
@@ -28,7 +28,7 @@ so basically you can do anything with it.
 
 # Resources
 
-Aircraft Technical Data & Specifications http://www.airliners.net/aircraft-data/extra-230-300-200/209
+Aircraft Technical Data & Specifications https://www.manualslib.com/products/Extra-300s-4117778.html
 
 There are other liveries in folders:
 
