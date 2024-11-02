@@ -1,18 +1,22 @@
 <[file][][]
-    <[object][][]
-        <[int][Version][220]>
-        <[vec32array][ContactSpheres][ (0.627 0.926 -1.256 0.184) (0.627 -0.926 -1.256 0.184) (-4.654 0.0 -0.466 0.082) ]>
-        <[string8][ICAO][E300]>
+    <[modelinformation][][]
+        <[int32][Version][220]>
+        <[list_vector4_float64][ContactSpheres][ (0.627 0.926 -1.256 0.184) (0.627 -0.926 -1.256 0.184) (-4.654 0.0 -0.466 0.082) ]>
+        <[stringt8c][ICAO][E300]>
         <[string8][DisplayName][Extra 300S]>
         <[string8][DisplayNameFull][Extra 300S]>
-        <[localized_text_list][Descriptions][]
-            <[localized_text][][]
+        <[list_localized_text][Descriptions][]
+            <[localized_text][element][0]
                 <[string8][Language][en]>
                 <[string8][Text][The EXTRA 300S is a single seat, low-wing aerobatic monoplane with conventional(taildragger) landing gear, offering incredible aerobatic performance for the unlimited competitor or free-style pilot. This nice low-poly aerobatics aircraft is based on Extra 300L and uses Zivko Edge 540 cockpit as the reference for the interior. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model created by Martins Upitis (BGE Air Race project).]>
             >
-            <[localized_text][][]
+            <[localized_text][element][1]
                 <[string8][Language][de]>
                 <[string8][Text][Die Extra 300S sind ein- oder zweisitzige Versionen des Kunstflugzeugs Extra 300 in Tiefdeckeranordnung des deutschen Herstellers Extra Aircraft. Für Aerofly FS4 von Krzysztof Kaniewski. 3d-Modell erstellt von Martins Upitis.]>
+			>
+			<[localized_text][element][2]
+				<[string8u][Language][pl]>
+                <[string8][Text][EXTRA 300S to jednomiejscowy, niskopodwoziowy samolot akrobacyjny z konwencjonalnym podwoziem ogonowym, oferujący niesamowite osiągi akrobacyjne dla nieograniczonego zawodnika lub pilota swobodnego. Ten ładny samolot akrobacyjny low-poly bazuje na Extra 300L i wykorzystuje kokpit Zivko Edge 540 jako odniesienie dla wnętrza. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Oryginalny model 3D stworzony przez Martins Upitis (projekt BGE Air Race).]>
 			>
         >
 		<[float64][WingSpan][7.5]>
