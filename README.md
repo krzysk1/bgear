@@ -1,6 +1,8 @@
 # bgear
 Extra 300S (BGE Air Race) for Aerofly FS4
 
+**THE MODEL HAS NO DETAILED COCKPIT AND NO DEVELOPMENT IS PLANNED NOW**
+
 The Extra Flugzeugbau EA300 is a two-seat aerobatic monoplane capable of Unlimited category competition.
 
 This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski with the Aerofly FS4 SDK. 
@@ -16,7 +18,7 @@ so basically you can do anything with it.
  Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
  Use it at your own risk!
  
-# Installation
+# Installation & Sound
 
 1. Unzip file and move the folder "bgear" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
 

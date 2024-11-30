@@ -12,14 +12,14 @@
             >
             <[camera_head][CameraPilot][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -1.51 0.0 0.54 ]>
+                <[tmvector3d][R0][ -1.51 0.0 0.51 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 -0.2 ]>
                 <[float64][Kf][60.0]>
                 <[float64][Df][1.00]>
                 <[float64][Kt][0.08]>
                 <[float64][Dt][0.02]>
                 <[bool][InCockpit][true]>
-                <[string8][Tags][cockpit pilot rear]>
+                <[string8][Tags][cockpit pilot]>
             >
             <[camera][CameraCockpitOutside][]
                 <[string8][Body][Fuselage]>
@@ -3635,7 +3635,7 @@
             >
             <[graphics_input][StickBaseTransformInput][]
                 <[uint32][InputID][ServoElevator.Output]>
-                <[float64][Scaling][0.2]>
+                <[float64][Scaling][0.3]>
             >
             <[graphics_rotation][StickBaseTransform][]
                 <[string8][Input][StickBaseTransformInput.Output]>
