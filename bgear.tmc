@@ -7,37 +7,51 @@
         <[string8][DisplayNameFull][Extra 300S]>
         <[list_localized_text][Descriptions][]
             <[localized_text][element][0]
-                <[string8][Language][en]>
+                <[string8u][Language][en]>
                 <[string8][Text][The EXTRA 300S is a single seat, low-wing aerobatic monoplane with conventional(taildragger) landing gear, offering incredible aerobatic performance for the unlimited competitor or free-style pilot. This nice low-poly aerobatics aircraft is based on Extra 300L and uses Zivko Edge 540 cockpit as the reference for the interior. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model created by Martins Upitis (BGE Air Race project).]>
             >
             <[localized_text][element][1]
-                <[string8][Language][de]>
-                <[string8][Text][Die Extra 300S sind ein- oder zweisitzige Versionen des Kunstflugzeugs Extra 300 in Tiefdeckeranordnung des deutschen Herstellers Extra Aircraft. Für Aerofly FS4 von Krzysztof Kaniewski. 3d-Modell erstellt von Martins Upitis.]>
-			>
-			<[localized_text][element][2]
-				<[string8u][Language][pl]>
+                <[string8u][Language][de]>
+                <[string8][Text][Die EXTRA 300S ist ein einsitziges, tiefgestelltes Kunstflug-Eindeckerflugzeug mit konventionellem Spornradfahrwerk, das unglaubliche Kunstflugleistungen für unbegrenzte Wettbewerbe oder Freestyle-Piloten bietet. Dieses schöne Low-Poly-Kunstflugzeug basiert auf der Extra 300L und verwendet das Cockpit der Zivko Edge 540 als Vorlage für den Innenraum. Für Aerofly FS4, hergestellt von Krzysztof Kaniewski. Original-3D-Modell erstellt von Martins Upitis (BGE Air Race-Projekt).]>
+            >
+            <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][L'EXTRA 300S est un monoplan acrobatique monoplace à aile basse équipé d'un train d'atterrissage classique (train classique), offrant des performances acrobatiques incroyables pour les pilotes de compétition illimitée ou de style libre. Ce bel avion acrobatique low-poly est basé sur l'Extra 300L et utilise le cockpit du Zivko Edge 540 comme référence pour l'intérieur. Pour Aerofly FS4, créé par Krzysztof Kaniewski. Modèle 3D original créé par Martins Upitis (projet BGE Air Race).]>
+            >
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][El EXTRA 300S es un monoplano acrobático monoplaza de ala baja con tren de aterrizaje convencional (cola arrastrada) que ofrece un rendimiento acrobático increíble para competidores sin límites o pilotos de estilo libre. Este bonito avión acrobático de baja poligonalidad se basa en el Extra 300L y utiliza la cabina del Zivko Edge 540 como referencia para el interior. Para Aerofly FS4, creado por Krzysztof Kaniewski. Modelo 3D original creado por Martins Upitis (proyecto BGE Air Race).]>
+            >
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][L'EXTRA 300S è un monoplano acrobatico monoposto ad ala bassa con carrello di atterraggio convenzionale (taildragger), che offre incredibili prestazioni acrobatiche per i piloti agonisti senza limiti o freestyle. Questo bellissimo aereo acrobatico low-poly è basato sull'Extra 300L e utilizza la cabina di pilotaggio dello Zivko Edge 540 come riferimento per gli interni. Per Aerofly FS4 realizzato da Krzysztof Kaniewski. Modello 3D originale creato da Martins Upitis (progetto BGE Air Race).]>
+            >
+            <[localized_text][element][5]
+                <[string8u][Language][pl]>
                 <[string8][Text][EXTRA 300S to jednomiejscowy, niskopodwoziowy samolot akrobacyjny z konwencjonalnym podwoziem ogonowym, oferujący niesamowite osiągi akrobacyjne dla nieograniczonego zawodnika lub pilota swobodnego. Ten ładny samolot akrobacyjny low-poly bazuje na Extra 300L i wykorzystuje kokpit Zivko Edge 540 jako odniesienie dla wnętrza. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Oryginalny model 3D stworzony przez Martins Upitis (projekt BGE Air Race).]>
-			>
+            >
         >
-		<[float64][WingSpan][7.5]>
-		<[float64][MinimumAirspeed][30.0]>
-        <[float64][ApproachAirspeed][37.5]>
-        <[float64][CruiseAirspeed][75.0]>
-        <[float64][MaximumAirspeed][110.0]>
-        <[float64][MaximumSpeed][110.0]>
-		<[tmvector2d][NormalAirspeedRange][ 30.0 79.0 ]>
-		<[tmvector2d][CautionAirspeedRange][ 79.0 110.0 ]>
-		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
-        <[float64][MaximumAltitude][3048.0]>
-        <[float64][CruiseAltitude][1000.0]>
-        <[float64][CruiseSpeed][110.0]>
-        <[float64][MaximumTakeoffMass][820.0]>
-        <[float64][EnginePower][234675.0]>
-        <[float64][MaximumRange][768000.0]>
-        <[uint][UnitsBuilt][200]>
-        <[uint][EngineCount][1]>
-        <[uint][Year][2008]>
+        <[float64][MaximumTakeoffMass]   [820.0]>
+        <[uint32] [MaximumPersonsOnBoard][1]>
+        <[float64][WingSpan]             [7.5]>
+        <[float64][WingArea]             [10.7]>
+        <[uint32] [Year]                 [2008]>
+        <[uint32] [EngineCount]          [1]>
+        <[uint32] [UnitsBuilt]           [200]>
+        <[float64][MinimumAirspeed]      [30.0]>
+        <[float64][ApproachAirspeed]     [37.5]>
+        <[float64][CruiseAirspeed]       [75.0]>
+        <[float64][MaximumAirspeed]      [110.0]>
+        <[float64][MaximumSpeed]         [110.0]>
+        <[float64][MaximumAltitude]      [3048.0]>
+        <[float64][CruiseAltitude]       [1000.0]>
+        <[float64][CruiseSpeed]          [110.0]>
+        <[float64][EnginePower]          [234675.0]>
+        <[float64][MaximumRange]         [768000.0]>
+        <[vector2_float64][FlapAirspeedRange]   [ 0.0   0.0  ]>
+        <[vector2_float64][NormalAirspeedRange] [ 30.0  79.0 ]>
+        <[vector2_float64][CautionAirspeedRange][ 79.0 110.0 ]>
         <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>
-		<[string8][Pilot][pilot_andy]>
+        <[string8][Pilot][pilot_andy]>
     >
 >

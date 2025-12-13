@@ -3,7 +3,6 @@
         <[pointer_list_tmuniverse][DynamicObjects][]
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][ -0.2 0.0 0.0 ]>   // mass: 777.3 (-0.243 0.007 -0.057)
             >
             <[camera][CameraFollow][]
                 <[string8][Body][Fuselage]>

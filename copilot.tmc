@@ -1,11 +1,12 @@
 <[file][][]
     <[hints][][]
-        // Extra 300S (Acrobatic category)
-        <[float64][MaximumTakeOffMass][820.0]>
+        // Extra 300S (Aerobatic category)
+        <[float64][MaximumTakeoffMass][820.0]>
+        <[float64][DefaultGrossMass][777.3]>
         <[float64][WingSpan][7.5]>
         <[float64][WingArea][10.44]>
         <[float64][HeightOffset][-1.256]>
-        <[float64][ApproachSpeed][37.5]> 
+        <[float64][ApproachSpeed][37.5]>
         <[float64][PatternSpeed][45.0]>
         <[float64][InitialClimbSpeed][42.5]>
         <[int][EngineCount][1]>
@@ -18,15 +19,12 @@
         <[float64][RudderGain][0.2]>
         <[float64][RudderSteeringGain][0.2]>
         <[float64][RudderCrossWind][2.5]>
-        <[float64][RudderTakeOff][0.02]>
+        <[float64][RudderTakeoff][0.02]>
         <[float64][FlareHeightScaling][0.7]>
         <[float64][FlareExpectedNoseDrop][1.0]>
-        <[float64][StarterMaximumTime][3.0]>
-        <[float64][RotationSpeedNormalizedClimb] [0.9259]>
-        <[float64][RotationSpeedNormalizedCruise][0.9259]>
         <[float64][GainSideSlipRoll][0.15]>
         <[float64][StarterMaximumTime][3.0]>
         <[float64][RotationSpeedNormalizedClimb] [0.9259]>
-        <[float64][RotationSpeedNormalizedCruise][0.9259]>		
+        <[float64][RotationSpeedNormalizedCruise][0.9259]>
     >
 >
