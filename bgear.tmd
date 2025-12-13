@@ -59,9 +59,9 @@
                 <[float64][Cone][0.0]>
                 <[bool][InCockpit][true]>
                 <[string8][Tags][fuselage wing right]>
-            >			
+            >
             <[rigidbody][Fuselage][]
-                <[float64][Mass][580.0]>
+                <[float64][Mass][400.0]>
                 <[tmvector3d][InertiaLength][3.7 0.6 0.6]>
                 <[tmvector3d][R0][-0.1 0.0 0.0]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
@@ -100,21 +100,14 @@
                 <[uint32][Type][0]>
             >
             // payload
-            <[rigidbody][PilotBody][]
+            <[persons][PilotBody][]
                 <[float64][Mass][80.0]>
+                <[string8][Body][Fuselage]>
                 <[tmvector3d][InertiaLength][0.4 0.4 0.7]>
                 <[tmvector3d][R0][-1.45 0.07 0.0]>
                 <[tmmatrix3d][B0][ 0.965926 0.0 0.258819  0.0 1.0 0.0 -0.258819 0.0 0.965926 ]>
-            >
-            <[multibody_joint][JointPilotBody][]
-                <[string8][Body0][Fuselage]>
-                <[string8][Body1][PilotBody]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
-                <[tmvector3d][R0][ -0.30 0.23 0.0 ]>
-                <[float64][Kp][50000.0]>
-                <[float64][Kd][1000.0]>
-                <[float64][InitialVelocity][0.0]>
-                <[uint32][Type][0]>
+                <[float64][MinimumPersons][1.0]>
+                <[float64][MaximumPersons][1.0]>
             >
             <[rigidbody][LeftGear][]
                 <[float64][Mass][12.75]>
@@ -156,7 +149,7 @@
                 <[float64][InputPosition][-0.02]>
                 <[uint32][Type][0]>
             >
-			
+
             <[multibody_joint][JointTailWheel][]
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][TailWheelSupport]>
@@ -489,20 +482,28 @@
                 <[string8][Input][RightWheelHull.Load]>
             >
 
-            <[fuel_deprecated_tank][CenterFuelTank][]
-                <[float64][MassFull][120.0]>
-                <[float64][FillLevel][0.6]>
-                <[string8][InputPressure][FuelTankFuelLine.Output]>
-                <[string8][AddFlow][FuelTankFuelLine.AddFlow]>
-            >
-            <[fuel_deprecated_tank][WingFuelTank][]
-                <[float64][MassFull][70.0]>
-                <[float64][FillLevel][0.1]>
-                <[string8][InputPressure][FuelTankFuelLine.Output]>
-                <[string8][AddFlow][FuelTankFuelLine.AddFlow]>
-            >
-            <[fuel_deprecated_line][FuelTankFuelLine][]
-                <[float64][Pressure][101325.0]>
+
+
+            <[fuel_tank][CenterFuelTank][]
+                <[string8][Body][Fuselage]>
+                <[float64][Capacity][120]>
+                <[float64][Mass][120]>
+                <[tmvector3d][Outlet0][ 0.313 0.0 -0.15 ]>
+                <[fuel_tank_stations][Stations][]
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0.313 0.225 0.05 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.5 0.6 ]>
+                    >
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0.313 -0.225 0.05 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.5 0.6 ]>
+                    >
+                >
+                <[tmvector2d][MassMap][ ( 0.0 0.0 )  ( 120.0 120.0 ) ]>
             >
             <[needle][NeedleCenterFuelLevel][]
                 <[string8][Input][CenterFuelTank.Output]>
@@ -510,13 +511,36 @@
                 <[float64][Speed][20.0]>
                 <[float64][Damping][0.8]>
             >
+            <[fuel_tank][WingFuelTank][]
+                <[string8][Body][Fuselage]>
+                <[float64][Capacity][70]>
+                <[float64][Mass][0]>
+                <[tmvector3d][Outlet0][ 0.161 0.0 -0.3 ]>
+                <[fuel_tank_stations][Stations][]
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0.22 1.22 -0.2 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.3 0.15 ]>
+                    >
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0.22 -1.22 0.65 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.0 1.0 ]>
+                        <[tmvector3d][Dimensions][ 0.3 0.15 ]>
+                    >
+                >
+                <[tmvector2d][MassMap][ ( 120.0 0.0 )  ( 190.0 70.0 ) ]>
+            >
             <[needle][NeedleWingFuelLevel][]
                 <[string8][Input][WingFuelTank.Output]>
                 <[string8][InputEnable][EngineInstrumentsOn.Output]>
                 <[float64][Speed][20.0]>
                 <[float64][Damping][0.8]>
             >
-
+            <[fuel_deprecated_line][FuelTankFuelLine][]
+                <[float64][Pressure][101325.0]>
+            >				
             <[input_switch][FuelSelectorSwitch][]
                 <[string8][Message][Controls.FuelSelector]>
                 <[string8][Events][ SwitchSound.Trigger ]>
@@ -1079,7 +1103,7 @@
                 <[float64][K][500000.0]>
                 <[float64][D][2000.0]>
                 <[bool][InstantCrash][true]>
-            >			
+            >
             <[aerofuselage][FuselageAero][]
                 <[tmvector3d][R0][0.0 0.0 0.0]>
                 <[tmvector3d][X0][1.0 0.0 0.0]>
@@ -3887,7 +3911,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_800_int.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM1200LoopIntern][]
                 <[string8][InputVolume][RPMVolume1200.Output]>
@@ -3896,7 +3920,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_1200_int.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM1500LoopIntern][]
                 <[string8][InputVolume][RPMVolume1500.Output]>
@@ -3905,7 +3929,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_1500_int.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM1800LoopIntern][]
                 <[string8][InputVolume][RPMVolume1800.Output]>
@@ -3914,7 +3938,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_1800_int.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM2200LoopIntern][]
                 <[string8][InputVolume][RPMVolume2200.Output]>
@@ -3923,7 +3947,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_2200_int.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM2600LoopIntern][]
                 <[string8][InputVolume][RPMVolume2600a.Output]>
@@ -3932,7 +3956,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_2600_int.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM800LoopExtern][]
                 <[string8][InputVolume][RPMVolume800.Output]>
@@ -3941,7 +3965,7 @@
                 <[uext32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_800_ext.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM1200LoopExtern][]
                 <[string8][InputVolume][RPMVolume1200.Output]>
@@ -3950,7 +3974,7 @@
                 <[uext32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_1200_ext.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM1500LoopExtern][]
                 <[string8][InputVolume][RPMVolume1500.Output]>
@@ -3959,7 +3983,7 @@
                 <[uext32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_1500_ext.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM1800LoopExtern][]
                 <[string8][InputVolume][RPMVolume1800.Output]>
@@ -3968,7 +3992,7 @@
                 <[uext32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_1800_ext.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM2200LoopExtern][]
                 <[string8][InputVolume][RPMVolume2200.Output]>
@@ -3977,7 +4001,7 @@
                 <[uext32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_2200_ext.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundloop][RPM2600LoopExtern][]
                 <[string8][InputVolume][RPMVolume2600a.Output]>
@@ -3986,7 +4010,7 @@
                 <[uext32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds/extra330lx_2600_ext.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.9 -0.0 0.0]>				
+                <[tmvector3d][R0][1.9 -0.0 0.0]>
             >
             <[soundinput][SideSlip][]
                 <[uint32][InputID][SideSlip.Output]>

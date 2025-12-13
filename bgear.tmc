@@ -1,6 +1,6 @@
 <[file][][]
     <[modelinformation][][]
-        <[int32][Version][220]>
+        <[int32][Version][230]>
         <[list_vector4_float64][ContactSpheres][ (0.627 0.926 -1.256 0.184) (0.627 -0.926 -1.256 0.184) (-4.654 0.0 -0.466 0.082) ]>
         <[stringt8c][ICAO][E300]>
         <[string8][DisplayName][Extra 300S]>
@@ -31,10 +31,19 @@
                 <[string8][Text][EXTRA 300S to jednomiejscowy, niskopodwoziowy samolot akrobacyjny z konwencjonalnym podwoziem ogonowym, oferujący niesamowite osiągi akrobacyjne dla nieograniczonego zawodnika lub pilota swobodnego. Ten ładny samolot akrobacyjny low-poly bazuje na Extra 300L i wykorzystuje kokpit Zivko Edge 540 jako odniesienie dla wnętrza. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Oryginalny model 3D stworzony przez Martins Upitis (projekt BGE Air Race).]>
             >
         >
-        <[float64][MaximumTakeoffMass]   [820.0]>
+        <[float64][MaximumTaxiMass]      [870.0]>
+        <[float64][MaximumTakeoffMass]   [870.0]>
+        <[float64][MaximumLandingMass]   [870.0]>
+        <[float64][MaximumZeroFuelMass]  [646.0]>
+        <[float64][OperatingEmptyMass]   [600.0]>
+        <[float64][MaximumFuelMass]      [190.0]>
+        <[float64][MaximumPayload]       [100.0]>
         <[uint32] [MaximumPersonsOnBoard][1]>
         <[float64][WingSpan]             [7.5]>
         <[float64][WingArea]             [10.7]>
+        <[float64][Length]               [6.9]>
+        <[float64][Height]               [2.6]>
+        <[float64][MainGearWidth]        [1.8]>
         <[uint32] [Year]                 [2008]>
         <[uint32] [EngineCount]          [1]>
         <[uint32] [UnitsBuilt]           [200]>
@@ -48,6 +57,16 @@
         <[float64][CruiseSpeed]          [110.0]>
         <[float64][EnginePower]          [234675.0]>
         <[float64][MaximumRange]         [768000.0]>
+        <[float64][MaximumLoadRange]     [768000.0]>
+        <[float64][MaximumFuelRange]     [768000.0]>
+        <[float64][MaximumFerryRange]    [768000.0]>
+        <[float64][MaximumGlideRatio]    [6.2]>
+        <[float64][TakeoffDistance]      [298.0]>
+        <[float64][LandingDistance]      [511.0]>
+        <[float64][FuelDensity]          [720.0]>
+        <[float64][MACLeadingEdge]       [0.3283]>
+        <[float64][MACLength]            [1.366]>
+        <[float64][MACOptimumCG]         [0.24]>
         <[vector2_float64][FlapAirspeedRange]   [ 0.0   0.0  ]>
         <[vector2_float64][NormalAirspeedRange] [ 30.0  79.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 79.0 110.0 ]>
