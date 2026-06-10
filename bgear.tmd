@@ -615,12 +615,18 @@
                 <[float64array][InputPosition][ 0.0 0.50 1.0 ]>
                 <[float64array][OutputPosition][ 0.0 0.20 0.40 ]>
             >
+            <[output_free][ServoLeftBrakeOutput][]
+                <[string8][Input][ServoLeftBrake.Output]>
+            >
             <[servolinear][ServoRightBrake][]
                 <[string8][Input][RightBrakeInput.Output]>
                 <[float64][OutputSpeed][10.0]>
                 <[float64][Position][0.0]>
                 <[float64array][InputPosition][ 0.0 0.50 1.0 ]>
                 <[float64array][OutputPosition][ 0.0 0.20 0.40 ]>
+            >
+            <[output_free][ServoRightBrakeOutput][]
+                <[string8][Input][ServoRightBrake.Output]>
             >
             <[servoclassic][ServoLeftAileron][]
                 <[string8][Input][AileronTrimmed.Output]>
@@ -1262,6 +1268,15 @@
             <[output][NavigationLightOn][]
                 <[string8][Input][NavigationLightSwitch.Output]>
             >
+            <[input_switch][LandingLightSwitch][]
+                <[string8][Message][Controls.Lighting.Landing]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
+                <[float64][Value][1.0]>
+            >
+            <[output][LandingLightOn][]
+                <[string8][Input][LandingLightSwitch.Output]>
+            >			
             <[input_discrete][GPSZoom][]
                 <[string8][Message][GPS.Zoom]>
                 <[tmvector2d][Range][ -2.0 8.0 ]>

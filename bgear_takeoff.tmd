@@ -3,26 +3,23 @@
         <[pointer_list_tmuniverse][DynamicObjects][]
 
             // max rpm
-            <[input_lever][PropellerSpeedInput][164]
+            <[input_lever][PropellerSpeedInput][]
                 <[float64][Value][1.0]>
             >
 
             // lights
-            <[input_switch][StrobeLightSwitch][164]
+            <[input_switch][StrobeLightSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][NavigationLightSwitch][166]
-                <[float64][Value][0.0]>
+            <[input_switch][NavigationLightSwitch][]
+                <[float64][Value][1.0]>
             >
 
             // switches
-            <[input_switch][AlternatorSwitch][116]
+            <[input_switch][FuelPumpSwitch][]
                 <[float64][Value][1.0]>
             >
-            <[input_switch][BoostPumpSwitch][118]
-                <[float64][Value][1.0]>
-            >
-            <[input_switch][AvionicsSwitch][124]
+            <[input_switch][SwitchMasterBattery][]
                 <[float64][Value][1.0]>
             >
 

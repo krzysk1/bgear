@@ -1,0 +1,45 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engine
+            <[input_lever][ThrottleInput][]
+                <[float64][Value][0.0]>
+            >
+            <[servolinear][ServoThrottle][]
+                <[float64][Position][0.0]>
+            >
+            <[input_lever][PropellerSpeedInput][]
+                <[float64][Value][0.8]>
+            >
+            <[multibody_joint][PropellerJoint][]
+                <[float64][InitialVelocity][0.0]>
+            >
+
+            // trim
+            <[input_default][ElevatorTrim][]
+                <[float64][Value][0.0]>
+            >
+            <[servoclassic][ServoElevator][]
+                <[float64][Position][0.0]>
+            >
+
+            // lights
+            <[input_switch][StrobeLightSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][NavigationLightSwitch][]
+                <[float64][Value][0.0]>
+            >
+
+            // switches
+            <[input_switch][FuelPumpSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][SwitchMasterBattery][]
+                <[float64][Value][0.0]>
+            >
+
+        >
+    >
+>
