@@ -70,7 +70,7 @@
         <[vector2_float64][FlapAirspeedRange]   [ 0.0   0.0  ]>
         <[vector2_float64][NormalAirspeedRange] [ 30.0  79.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 79.0 110.0 ]>
-        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>
+        <[string8][Tags][ airplane piston general_aviation aerobatic gear tailgear ]>
         <[string8][Pilot][pilot_andy]>
     >
 >
